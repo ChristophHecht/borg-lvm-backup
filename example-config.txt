@@ -40,7 +40,7 @@ MAILFROM=
 MAILTO=
 
 #SMTP Server
-MAILHOST=mail.checht.de
+MAILHOST=
 
 #SMTP Username
 MAILUSER=
