@@ -112,7 +112,7 @@ echo "$(date +"%Y-%m-%d-%H-%M-%S"):----FINISHED DELETING SNAPSHOT----" | tee -a 
 
 ##PRUNE
 echo "$(date +"%Y-%m-%d-%H-%M-%S"):----PRUNING BORG REPO----" | tee -a $LOGFILE
-$BORGLOCATION prune --force -s -H $KEEPHOURS -d $KEEPDAYS -w $KEEPWEEKS -m $KEEPMONTHS -P $JOBNAME $REPOSITORY 2>&1 >/dev/null | tee -a $LOGFILE
+$BORGLOCATION prune --force -s -H $KEEPHOURS -d $KEEPDAYS -w $KEEPWEEKS -m $KEEPMONTHS --keep-last $KEEPLAST -P $JOBNAME $REPOSITORY 2>&1 >/dev/null | tee -a $LOGFILE
 echo "$(date +"%Y-%m-%d-%H-%M-%S"):----Finished Pruning Borg Repo----" | tee -a $LOGFILE
 
 ##FINISH

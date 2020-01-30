@@ -33,6 +33,9 @@ KEEPWEEKS=
 #Monthly backups to keep
 KEEPMONTHS=
 
+#Number of last backups that should always be kept
+KEEPLAST=
+
 #Sender mail address
 MAILFROM=
 
