@@ -1,5 +1,5 @@
 #!/bin/bash
-# BorgBackup LVM Backup Script V1.0
+# BorgBackup LVM Backup Script V1.1
 
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 configfile (located in folder ./config)" >&2
@@ -37,7 +37,7 @@ LOCKFILE="$WORKINGDIRECTORY/locks/$JOBNAME"
 LOGFILE="$WORKINGDIRECTORY/logs/$JOBNAME-$TIMESTAMP"
 
 
-#Ordnerstruktur erstellen, falls nicht existent
+#Create folder structure
 DIRTIMESTAMPFILE="$WORKINGDIRECTORY/timestamps/"
 DIRLOCKFILE="$WORKINGDIRECTORY/locks/"
 DIRLOGFILE="$WORKINGDIRECTORY/logs/"

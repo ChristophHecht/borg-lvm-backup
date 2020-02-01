@@ -1,5 +1,5 @@
 #!/bin/bash
-# BorgBackup LVM Backup Script V1.0 Config File
+# BorgBackup LVM Backup Script V1.1 Config File
 #Passphrase of your borg repositorty
 BORG_PASSPHRASE=""
 
@@ -43,7 +43,7 @@ MAILFROM=
 MAILTO=
 
 #SMTP Server
-MAILHOST=mail.checht.de
+MAILHOST=
 
 #SMTP Username
 MAILUSER=
