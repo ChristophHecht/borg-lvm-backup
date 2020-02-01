@@ -16,7 +16,7 @@ TIMESTAMP="$(date +"%Y-%m-%d-%H-%M-%S")"
 #QUIT IF CONFIGFILE DOES NOT EXIST
 if [ ! -f $CONFIGFILE ]
 then
-        echo "$(date +"%Y-%m-%d-%H-%M-%S"):ERROR: Secretfile not found, aborting."
+        echo "$(date +"%Y-%m-%d-%H-%M-%S"):ERROR: Configfile not found, aborting."
         echo "$(date +"%Y-%m-%d-%H-%M-%S"):----------UNSUCCESSFULLY FINISHED BACKUP OF $HOST $JOBNAME ON $TIMESTAMP----------"
         exit 2
 fi
